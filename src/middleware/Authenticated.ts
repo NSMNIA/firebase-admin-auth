@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import * as admin from 'firebase-admin'
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export async function isAuthenticated(req: Request, res: Response, next: Function) {
     const { authorization } = req.headers
 
